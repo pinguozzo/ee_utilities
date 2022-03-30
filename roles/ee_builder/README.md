@@ -31,31 +31,31 @@ Available variables are listed below, along with default values defined (see def
 
 ### Requirements Variable defaults
 |Variable Name|Default Value|Required|Description|
-|:---:|:---:|:---:|:---:|:---:|
-|`ee_bindep`|list|no|The variable list to provide bindep requirements if using variables||
-|`ee_python`|list|no|The variable list to provide python requirements if using variables||
-|`ee_collections`|list|no|The variable list to provide galaxy requirements if using variables, in ansible galaxy list form||
-|`ee_roles`|list|no|The variable list to provide galaxy requirements if using variables, in ansible galaxy list form||
+|:---:|:---:|:---:|:---:|
+|`ee_bindep`|list|no|The variable list to provide bindep requirements if using variables|
+|`ee_python`|list|no|The variable list to provide python requirements if using variables|
+|`ee_collections`|list|no|The variable list to provide galaxy requirements if using variables, in ansible galaxy list form|
+|`ee_roles`|list|no|The variable list to provide galaxy requirements if using variables, in ansible galaxy list form|
 
 ### Build Step defaults
 |Variable Name|Default Value|Required|Description|
-|:---:|:---:|:---:|:---:|:---:|
-|`ee_name`||no|Name of the ee image to create.|
+|:---:|:---:|:---:|:---:|
+|`ee_name`|no|Name of the ee image to create.|
 |`ee_prepend`|list|no|Ansible Builder Additional commands may be specified in the additional_build_steps section, for execution before the main build steps (prepend).|
 |`ee_append`|list|no|Ansible Builder Additional commands may be specified in the additional_build_steps section, for execution after the main build steps (append).|
 
 ### Registry Step defaults
 |Variable Name|Default Value|Required|Description|
-|:---:|:---:|:---:|:---:|:---:|
-|`ee_registry_username`||no|username to use when authenticating to remote registries.|
-|`ee_registry_password`||no|Password to use when authenticating to remote registries.|
+|:---:|:---:|:---:|:---:|
+|`ee_registry_username`|no|username to use when authenticating to remote registries.|
+|`ee_registry_password`|no|Password to use when authenticating to remote registries.|
 |`ee_registry_dest`||no|Path or URL where image will be pushed.|
 |`ee_image_push`|True|no|Control to choose whether to push image to registry or not.|
-|`ee_auth_file`||no|Path to file containing authorization credentials to the remote registry.|
-|`ee_executable`||no|Path to podman executable if it is not in the $PATH on the machine running podman.|
-|`ee_ca_cert_dir`||no|Path to directory containing TLS certificates and keys to use.|
-|`ee_validate_certs`||no|Require HTTPS and validate certificates when pulling or pushing. |
-|`ee_sign_by`||no|Path to a key file to use to sign the image.|
+|`ee_auth_file`|no|Path to file containing authorization credentials to the remote registry.|
+|`ee_executable`|no|Path to podman executable if it is not in the $PATH on the machine running podman.|
+|`ee_ca_cert_dir`|no|Path to directory containing TLS certificates and keys to use.|
+|`ee_validate_certs`|no|Require HTTPS and validate certificates when pulling or pushing. |
+|`ee_sign_by`|no|Path to a key file to use to sign the image.|
 
 ## Example Playbook
 
