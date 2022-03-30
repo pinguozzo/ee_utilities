@@ -23,4 +23,4 @@
     ee_append:
       - VOLUME /var/lib/docker
   roles:
-    - redhat_cop.tower_utilities.ee_builder
+    - ee_builder
